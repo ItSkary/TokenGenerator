@@ -84,6 +84,22 @@ By contrast revoking a token may be trikier with the approach followed, that at 
             Console.ReadKey();
         }
 ```
+
+Example output : 
+
+```sh
+Are boundaries valid : True
+Plaintext of token1       : __?standard?__creationTime?637971371641946449?__size?150?__timeoutMs?20000?DecimalValue?3.44567?OtherData?OtherData?UserName?CurrentUser?cmOttWiMGIP7F
+Plaintext of token1 clone : __?standard?__creationTime?637971371641946449?__size?150?__timeoutMs?20000?DecimalValue?3.44567?OtherData?NewValue?UserName?CurrentUser?JcDGe5ue6WhzP7
+Encrypted token : B3I7bd2Y8tfKKibLW7Tgv8CAhMjV0g1FgF-uvDlHjvh73yFQubpWbjuGz-m411YZUXzSY-SzDGkBC2r8rpzK1iXlZXSEy069K54SKnNJ1GwWSqz4cu_C1kUDA0Cogd91CcEQ7O0OvxtUCayBW9bdQDWU2LQkGQCmssBRVVx4rnlBtFreQjeNKq0UlQ2VVxPGgPOfVkkEy-i-qmW_5cxAekzkxbjvLveGXo0IAmB5vGVyX0vdmyGmq8Dtvqz6fQMsiDeE6yuwtWILtRVj_deuBNXsbmSvJqNBV5bK7gtABJD3Xmk2CgUOjZyhTiZP-IrdHozrCMESuq-Mw7hBBUGxZSFiridWilThXI5K284ujiDYMcPS_uk39qRgAZvZFkeB0nLppN5pKS8NFzX5GepldKeNHB25IHSGlHmuVwYllV9uX0Nr3EIC9ePKDHfEW8vqjlzTXQkEBB_bzuadLAdn904MDFY1
+
+Is expired : False
+Try to instantiate Token from invalid data
+Creation failed : tokenData
+
+Type a key to contienue..
+```
+
 ## License
 
 MIT
