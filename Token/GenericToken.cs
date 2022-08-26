@@ -1,4 +1,4 @@
-﻿using SecurityDriven.Inferno;
+using SecurityDriven.Inferno;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -194,7 +194,7 @@ namespace Token
                 key = (string)index;
 
                 if (_properties.ContainsKey(key) == false)
-                    throw new IndexOutOfRangeException();
+                    result = null; ;
             }
 
             if (string.IsNullOrEmpty(key))
@@ -255,8 +255,8 @@ namespace Token
             {
                 key = (string)index;
 
-                if (_properties.ContainsKey(key) == false)
-                    throw new IndexOutOfRangeException();
+                if (_properties.ContainsKey(key) == false && !string.IsNullOrEmpty(key))
+                    _properties.TryAdd(key,null);
             }
 
             if (string.IsNullOrEmpty(key))
