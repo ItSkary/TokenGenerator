@@ -11,7 +11,7 @@ By contrast revoking a token may be trikier with the approach followed, that at 
 #### Usage Example
 
 ```csharp
-static void Main(string[] args)
+        static void Main(string[] args)
         {
             SecureString masterKey = new SecureString();
             masterKey.AppendChar('M');
@@ -83,7 +83,6 @@ static void Main(string[] args)
             Console.WriteLine("Type a key to contienue..");
             Console.ReadKey();
         }
-    }
 ```
 ## License
 
